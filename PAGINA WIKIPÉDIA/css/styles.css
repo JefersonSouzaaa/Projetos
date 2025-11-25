@@ -1,0 +1,79 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(180, 180, 180);
+}
+
+.container {
+    max-width: 1100px;
+    background-color: white;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* header section styles */
+
+.header {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.main-paragraph {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* imagens */
+
+.featured-image {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* imagens */
+
+.img-bold {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* biography */
+
+.biography {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
