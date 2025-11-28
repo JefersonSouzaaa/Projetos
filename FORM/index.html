@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="../FORM/css/styles.css">
+</head>
+
+<body class="html">
+    <h2>Formulários em HTML</h2>
+    <!-- 1 Formulário de exemplo -->
+    <!-- 2 Atributos do formulário -->
+    <form action="/submit" method="post">
+        <!-- nome -->
+        <div>
+            <label class="name" for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        </div>
+        <!-- email -->
+        <div>
+            <label class="email" for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+        <!-- senha -->
+        <div>
+            <label class="password" for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br><br>
+        </div>
+
+        <!-- data -->
+        <div>
+            <label class="date" for="date">Data de Nascimento:</label>
+            <input type="date" id="date" name="date" required><br><br>
+        </div>
+
+        <!-- CEP -->
+        <div>
+            <label class="cep" for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="12345-678" required><br><br>
+        </div>
+
+
+
+        <!-- 3 Atributos de escolhas -->
+        <div>
+            <label for="job">Profissão:</label>
+            <select id="job" name="job">
+    <option value="developer">Desenvolvedor</option>
+    <option value="designer">Designer</option>
+    <option value="manager">Gerente de Projetos</option>
+    <option value="other">Outro</option>            
+             </select>
+        </div>
+
+        <!-- 5 atributo selected  -->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+    <option value ="yes" >Sim</option>
+    <option value ="no" selected>Não</option>
+
+</select>
+        </div>
+
+
+
+        <!-- 6 Multiplas opções -->
+        <div class="interesses">
+            <label for="items">Qual aréa você tem interesse?:</label>
+            <select name="items" multiple>
+<option value="CSS"> CSS</option>   
+<option value="HTML"> HTML</option>
+<option value="JavaScript"> JavaScript</option>
+<option value="Python"> Python</option>
+</select>
+        </div>
+
+
+        <!-- 7 Textarea -->
+        <div class="comment">
+            <label for="comment">Escreva a baixo o que você achou do formulário:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        </div>
+
+        <!-- 10 fieldset legend -->
+        <div>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" id="male" name="gender" value="male ">
+                <label for="male">Masculino</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Feminino</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Outro</label>
+            </fieldset>
+        </div>
+
+        <!-- 11 datalist -->
+        <div>
+            <label for="browser">Escolha seu navegador favorito:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Safari">
+      <option value="Edge">
+      <option value="Opera">
+    </datalist>
+        </div>
+
+
+        <!-- placeholder -->
+        <div>
+
+            <label for="currentjob">Qual foi seu último emprego?</label>
+            <input type="text" id="currentjob" name="currentjob" placeholder="Digite seu último emprego aqui">
+        </div>
+
+        <!-- arquivos -->
+        <div>
+            <label for="fileUpload">Envie seu arquivo:</label>
+            <input type="file" id="fileUpload" name="fileUpload"><br><br>
+        </div>
+
+
+        <!-- Tente mudar o valor -->
+        <div>
+            <p>Tente mudar o valor:</p>
+            <input type="number" id="age" name="age" min="18" max="99" value="18" disabled>
+        </div>
+
+        <!-- checkbox -->
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Me mantenha atualizado</label>
+
+        </div>
+
+        <!-- reset -->
+        <div>
+            <input type="reset" value="Limpar Formulário">
+        </div>
+
+        <!-- Envio do formulário -->
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+
+        <!-- Required -->
+        <div>
+            <label for="accept">Aceito os termos</label>
+            <input type="checkbox" id="accept" name="accept" required>
+        </div>
+
+    </form>
+</body>
+
+</html>
